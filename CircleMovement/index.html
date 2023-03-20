@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeyFrames</title>
+  <style>
+      .elm2, .elm3 {
+          border: 5px solid;
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          color: black;
+      }
+      .elm2{
+          animation-name: over-and-back;
+          animation-duration: 4s;
+          animation-iteration-count: 10;
+          animation-play-state: running;
+      }
+      .elm2{
+          animation-name: over-and-back;
+          animation-duration: 4s;
+          animation-iteration-count: 10;
+          animation-play-state: running;
+      }
+      @keyframes  my-animation{
+          0% {
+              background-color: hsl(271, 49%, 54%, 0);
+              position: relative;
+              left: 0;
+              top: 0;
+          }
+          50% {
+              background-color: hsl(271, 49%, 54%, 1);
+              position: relative;
+              left: 250%;
+              top: 10px;
+          }
+          100% {
+              background-color: hsl(271, 49%, 54%, 0);
+              position: relative;
+              left: 0;
+              top: 100px;
+          }
+
+      }
+      @keyframes over-and-back{
+          0% {
+              background-color: hsl(271, 49%, 54%, 0);
+              position: relative;
+              left: 0;
+              top: 0;
+          }
+          50% {
+              background-color: hsl(271, 49%, 54%, 1);
+              position: relative;
+              left: 250%;
+              top: 10px;
+          }
+          100% {
+              background-color: hsl(271, 49%, 54%, 0);
+              position: relative;
+              left: 0;
+              top: 100px;
+          }
+      }
+  </style>
+</head>
+<body>
+<div>
+  <div class="elm2">&nbsp;</div>
+  <div class="elm3">&nbsp;</div>
+</div>
+</body>
+</html>
